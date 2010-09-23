@@ -1,0 +1,37 @@
+Program Testing-
+
+Definition: A set of test cases that, taken together, satisfy us 
+that a program or subprogram (function) is correct constitutes a 
+"black box" test.
+
+(Note: It is not possible to be absolutely certain that a program
+is correct, because the number of possible tests is infinite.  It 
+is possible to be absolutely certain that it is incorrect, 
+however, if it fails a single test.)
+
+
+Steps in performing black box testing of a program or subprogram:
+
+(Note: In programs having more than one function, each function 
+should be tested separately.)
+
+1. Determine sets of input values that demonstrate the goals of 
+the program or function.   This is the most difficult step in 
+black box testing.  You must use your understanding of the program 
+specifications and your judgment in selecting appropriate sets of 
+inputs.
+
+2. For each set of inputs, determine the expected output for the
+given input.
+
+3.  Run the program and observe the resulting (actual) output.
+
+4.  Compare the expected output and the actual output.  Only if 
+they are the same for each test would you conclude that "There is 
+evidence that the program is correct."
+
+
+References:
+
+Hennefeld & Burchard, "Using C++", pp 83, 85, 174 - 176
+Dale, "C++ Plus Data Structures", pp 16 - 50

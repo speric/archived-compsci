@@ -1,0 +1,380 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fcharset0 Times New Roman;}}
+\viewkind4\uc1\pard\f0\fs20 1. Write a "main" function that does the following: a) reads a text file of integers and stores them in a one-dimensional array; b) calls a subfunction to count the number of positives and count the number of negatives; c) prints the counts of positives and negatives..  \par
+    Write a subfunction that performs activity (b) above.   The subfunction should not use input or output, i.e., do not use >> or   <<.    Show a test plan.\par
+\par
+2. Write a subfunction that can be passed a pointer to an existing two-dimensional array of integers defined to have ten columns.  The number of rows and the number of columns actually used in the array is indeterminate.  The subfunction should find the row and column indices of the largest number in the array, and make them available to the calling function.  Your subfunction should do neither input nor output.         \par
+   Write a driver suitable for testing your subfunction.  Show a test plan.\par
+\par
+3. Write a subfunction that reads a text file of integers (indeterminate length) and returns the average of the values.  Write a driver suitable for testing your function. Show a test plan.\par
+\par
+4. Write a 'void" subfunction that finds the largest and the smallest value in a group of three integers, and makes the largest and smallest values available to a calling function.  Assume that the three integers will be passed by the calling function.  Write a driver suitable for testing your function.  Show a test plan.\par
+\par
+\pard\nowidctlpar 5. a) Write a void function (not main) that reads 3 integers from the keyboard and uses call by reference to pass them to a calling function.\par
+\par
+     b) Write a main function that calls the function in part  (a) and prints the largest integer of the three.\par
+\par
+\par
+6..\par
+   a) Write a recursive function (no loops) to compute  the value  a*n   (a times n) where a is a float and n is a non-negative integer,  You may not use the multiply operator (*).\par
+ \par
+                      ________________________\par
+                      |     0                    if  n = 0\par
+  note:  a*n =  |\par
+                      |     a * (n-1)       if n >=0\par
+                      __________________________\par
+\par
+b)  Repeat  part  (a) without recursion  (use a loop).\par
+\par
+7.  a)  Write a main function to read an indeterminate number of integers from the keyboard and print out those in the range from 5 to 10 (inclusive).  Use a for loop (no while loops).\par
+\par
+     b) Repeat part (a) with a while loop using a test for a sentinel value (i.e., special value indicating end of data).\par
+\pard\par
+8. Write a subfunction that finds the minimum and maximum values in a one-dimensional array of integers, and makes those two values available to a calling function.  Assume that the subfunction will be passed a pointer to the array and a count of the number of values in the array.  Your subfunction should not do input or output  (shouldn't  use << or >>).  Write a driver suitable for testing your subfunction,  Show a test plan.\par
+\par
+9.  Write a subfunction that finds out if a specified character is present in a given string, and makes that fact available to a calling function. Assume that the subfunction will be passed  the specified character and a pointer to the given string. Your subfunction should not do input or output  (shouldn't  use << or >>).  Write a driver suitable for testing your subfunction,  Show a test plan.\par
+\par
+10. Write a subfunction to read from a text file the name and integer grade of an indeterminate number of students, and store them in array of structures that is made available to a calling function.  Assume there will be no more than 100 students.  Show all type definitions needed.  Write a driver that prints all the names and grades in the text file.\par
+\par
+\pard\nowidctlpar 11. Write a main function to read an indeterminate number of integers from a text file and copy them to another text file.\par
+\par
+12. a) Write a function that prints the integers in a one-dimensional array in reverse order., i.e., the array value with index \ldblquote 0\rdblquote  is the last value printed.  Assume that the function will be passed an array pointer to an existing array of integers and a count of how many integers.\par
+\par
+    b) Write a driver suitable for testing your function in part (a).\par
+\par
+13.  a) Write a function that reads four integer s from the keyboard and makes the largest and smallest integers available to a calling function.\par
+       b) Write a driver suitable for testing your function in part (a).\par
+\par
+14.  a) Write a boolean function to search a one-dimensional array for a specified integer.  If the integer is found, the function should return \ldblquote true\rdblquote . otherwise it should return \ldblquote false\rdblquote .   Assume that a pointer to an existing array will be passed to the function, and also a count of the values in the array and the value that is to be searched for.\par
+\par
+     b) Show a test plan for your function.\par
+\pard\par
+15.  Show the complete \ul definition \ulnone  (both specification and implementation) of a stack class, where the stack elements are stored in a dynamic doubly-linked list with a tail pointer.   The only data members (private)  should be a list pointer and a tail pointer. Use appropriate comment statements for each member function in the specification.  Show all struct and typedef definitions needed.  Show a test plan and driver for the class.\par
+\par
+16.  Show the complete \ul definition\ulnone  (both specification and implementation) of a queue class where the elements of the queue are stored in a stack.  The only data member (private) should be an object of the stack class shown in question 1. Show a test plan and test driver for the class.\par
+\par
+17. We wish to have the definition of a class that has a two-dimensional array of integers as data  (10 rows and 10 columns) and operations for the following: writing out the row sums; writing the column sums; adding two arrays of the same class, creating a new array (without altering the original two arrays).\par
+  a) Show the specification.   b) Show the implementation    c) Show a driver suitable for testing your class.\par
+\par
+18..  a) Show the \ul specification \ulnone of a stack class capable of storing up to 100 integers.  The class should have an operation "print_stack"  for printing the contents of the stack without altering the contents of the stack.\par
+     b) Show an implementation of "print_stack" that does not use locally declared objects.\par
+     c) Show an implementation of "print_stack" that does not use array references, i.e., no direct access to the class data.\par
+     d)  Show a driver suitable for testing "print_stack".\par
+\par
+19. a)   Show the implementation of a member function called RemoveItem, to be added to the List2Type class.  The function should delete any node in the \ldblquote self\rdblquote  list that contains a specified value (the value should be a parameter of the function).  You may assume that there is at most one occurrence of the list, although there may not be any.\par
+\par
+\pard{\pntext\f0 b)\tab}{\*\pn\pnlvlbody\pnf0\pnindent600\pnstart2\pnlcltr{\pntxta)}}
+\fi-360\li600\tx600 Write a driver suitable for testing  your function in part a).\par
+\pard\par
+20. a) Write a \ldblquote client\rdblquote  function that uses the SortedType class to find the \ldblquote median\rdblquote  value of an object\rquote s list (int values).   The median is defined as the middle value of the list if there are an odd number of values, and the average of the two middle values if there are an even number of values.\par
+\par
+21. Write a program to print the largest integer in a group of integers.  The number of integers is indeterminate.  Use a "while" loop and a sentinel value of 9999.\par
+\par
+22. Write a program to print the average of a group of integers.  The number of integers is indeterminate.  Use a "for" loop with a "count"  that is read from the keyboard.\par
+\par
+23. Write a program to read 3 integers from the keyboard and print the \ul two\ulnone  largest to the screen.\par
+\par
+24.. Write a subfunction that computes and returns the average of an indeterminate of values read from the keyboard.  Use a while loop and a sentinel value of -9999.  Show a test plan and test driver..   \par
+\par
+25. Write a subfunction to find and return the largest value in a two-dimensional array of type int.  Assume the array was declared to have 8 columns and that the values were stored by the calling function.  The calling function will pass the array pointer and the counts of the number of rows and columns used for the values.  Show a test plan and test driver.\par
+\par
+26. Write a subfunction to find the two largest values in a one-dimensional array of int and make them available to a calling function.  Assume that the calling function will pass an array pointer to an existing array of values and a count of the number of values in the array.  Show a test plan and test driver.\par
+\par
+27   a) Write a function (\ul not main) \ulnone that can be passed two pointers to strings.  The function should \ldblquote merge\rdblquote  the two stings, i.e., produce a third string which alternates the characters from the original strings.  For example,  cat  and dog  should produce  cdaotg.   You may assume that the original two strings are the same size. Write your function in such a way that the new string can be printed in main.\par
+\pard\li360\par
+b)  Write a main suitable for testing your function in part a).\par
+\pard\par
+28 . a) Write a function (\ul not main\ulnone ) that can be passed a pointer to `a two dimensional array having 5 columns.  The number of rows and the number of columns actually used in the array  should be parameters of the function.   Your function should print out column sums in a report of the following format:\par
+\par
+      \tab\tab\tab      Column \tab\tab Sum\par
+\pard{\pntext\f0 1\tab}{\*\pn\pnlvlbody\pnf0\pnindent4380\pnstart1\pndec }
+\fi-1500\li4380\tx4380\'85\par
+\pard{\pntext\f0 2\tab}{\*\pn\pnlvlbody\pnf0\pnindent4380\pnstart2\pndec }
+\fi-1500\li4380\tx4380\'85\par
+\pard{\pntext\f0 3\tab}{\*\pn\pnlvlbody\pnf0\pnindent4380\pnstart3\pndec }
+\fi-1500\li4380\tx4380\'85\par
+\pard\li2880\'85\tab       \tab  \'85\par
+\'85                     ...\par
+   \par
+\pard{\pntext\f0 b)\tab}{\*\pn\pnlvlbody\pnf0\pnindent480\pnstart2\pnlcltr{\pntxta)}}
+\fi-360\li480\tx480 Write a  main function suitable for testing your function in part a).\par
+\pard\li120\par
+\par
+\pard 29.   Do  problem 28 using an array of struct instead of a two dimensional array.  Each struct should have five integer fields.  Show the struct definition and any typedef  needed.\par
+                   \par
+30.  Show the complete \ul definition \ulnone  (both specification and implementation) of a stack class, where the stack elements are stored in a dynamic linked list with a tail pointer.   The only data members (private)  should be a list pointer and a tail pointer. Use appropriate comment statements for each member function in the specification.  Show all struct and typedef definitions needed.  Show a test plan and driver for the class.\par
+\par
+31.   Show the complete \ul specification\ulnone  of a queue class that stores the queue elements in an array.  All data should be private. Use appropriate comment statements for each member function. Show the implementation of the "enq" and "deq" member functions. Using your queue class, write a main function that reads an indeterminate number of values from the keyboard, stores them in a queue, prints the values read that are greater than average, and then prints all the values. You may not declare any arrays in your main function\par
+\par
+32.  a)  Show the \ul specification\ulnone  for a stack class (if you use one not shown in class, provide adequate comment statements to explain it).   b)  Using the stack class you showed, write a client subfunction to return the average of the values in a stack.  Assume that that an object of the stack class, with an indeterminate  values already stored,  will be passed to the subfunction.  c)  Write a driver for testing the subfunction, and show a test  plan.\par
+\par
+33.  Repeat problem 1 (parts a, b, and c) for a queue instead of a stack.\par
+\par
+34.   a) Show a \ul specification\ulnone  for a dynamic linked list class that has the at least the following three operations (functions) :   (i)  for entering an element;  (ii) for printing all the elements of the list;  (iii)  for printing only the last element of the list (the one at the opposite end from the list pointer).   b) Show the \ul implementation \ulnone  of the class.  c)  Show a driver for testing your class.\par
+\par
+35. Write a boolean subfunction (i.e., returns 1 or 0) to test whether two strings are identical.  Assume that pointers to two existing strings will be passed to the function.  Show a test plan and test driver.\par
+\par
+36. Write a subfunction to find and return the largest value in a two-dimensional array of type int.  Assume the array was declared to have 8 columns and that the values were stored by the calling function.  The calling function will pass the array pointer and the counts of the number of rows and columns used for the values.  Show a test plan and test driver.\par
+\par
+37. Write a subfunction to find the two largest values in a one-dimensional array of int and make them available to a calling function.  Assume that the calling function will pass an array pointer to an existing array of values and a count of the number of values in the array.  Show a test plan and test driver.\par
+\par
+\par
+38. Write a program to count the number of negative integers in a group of integers.  The number of integers is indeterminate.  Read the integers from the keyboard and print the count to the screen.  Show a test plan for your program.\par
+\par
+39. Write a program to read three integers from the keyboard and print the smallest to the screen.  Do not use any loops in your program,  Show a test plan for your program.\par
+\par
+40.. a) Using a while loop,  write a program that calculates and prints the sum of the even numbers from 1 to 100.   b) Repeat the same program as in part a) using a for loop instead of a while loop.\par
+\par
+41. Write a program that inputs three integers from the keyboard and prints the sum, the smallest and the largest of the numbers.  Show a test plan for the program.\par
+\par
+42. Write a program that computes the average of an indeterminate of values read from the keyboard.  Use a while loop and a sentinel value of -9999.  Show a test plan for your program.   \par
+\par
+43.  Write a driver to test both a stack class and a queue class that are implemented using a linked-list.\par
+\par
+44. Write a member function for a linked-list class that sorts the values using the bubble sort.\par
+\par
+45, Write a member function for a linked-list class that swaps the last value in the list with the first value, i.e., the last value becomes the first value and the last value becomes the first.\par
+\par
+46. Write a subfunction that is passed a pointer to a string and creates a new string that is the same as the original string except that all the "blank" characters have been removed.  The pointer to the new string should be returned to the calling function.\par
+\par
+47. Write a subfunction to read an indeterminate number of values from the keyboard and make available to  a calling function the average of the values and a count of the number of values greater than average.\par
+\par
+48. Write a subfunction that prints first the positive values in an array of indeterminate size, and then prints the negative values.  Assume that the array values are stored by the calling function.\par
+\par
+49. Write a class "rectangle" whose data are the length and width of a rectangle, that has operations for computing the area and perimeter of the rectangle.  The only member function in the class that does output should be a function that prints the length and width of the rectangle. \par
+\par
+50. Write a "vector" class that stores values in a one-dimensional array.  The class should have a member function that returns the average of the values to the client.  There should also be a function that returns to the client a value specified by "index", i.e., the first element or the second element, etc.\par
+\par
+51. Using the class written for problem number 50,  write a client subfunction that prints the values that are greater than the average of all the values for a particular object of the class.\par
+\par
+52. Write a member function for a linked-list class that merges the sorted lists of two objects of the class so that the resulting list is also in sorted order.\par
+\par
+53. Write a member function for a linked-list class that prints the list values in reverse order, i.e., the value in the node pointed to by the list pointer is printed last.\par
+\par
+54.  Using a stack class, write a client subfunction that prints the elements in the stack starting from the bottom, i.e., the top element is printed last.\par
+\par
+55. Using a queue class, write a client subfunction that prints the elements in the queue starting from the rear, i.e., the front element is printed last.\par
+\par
+56. Write a recursive function for summing the value in a one-dimensional array.\par
+\par
+57. Write a recursive function for searching a one-dimensional array for a specified value.\par
+\par
+58. Write a member function for a linked-list class that uses recursion for summing the values in the list.  Do not use any loops. \par
+\par
+59. Write a subfunction to find the "median" of a group of values stored in an array.  The median is the value in the center of the group after sorting.  If there are an even number of values, the median is obtained by taking the arithmetic average of the two middle values.\par
+\par
+60.  Write a program that asks the user to enter two numbers, obtains the two numbers from the user and prints the sum, product, difference, and quotient of the two numbers.\par
+\par
+61.  Write a program that asks the user to enter two integers, obtains the numbers from the user, then prints the larger number followed by the words "is larger".  If the numbers are equal, print the message "These numbers are equal".\par
+\par
+62.  Write a program that inputs three integers from the keyboard and prints the sum, average, product, smallest and largest of these numbers. \par
+\par
+63. Write a program that reads an integer from the keyboard and determines and prints whether it is odd or even.  Do two version of this program, one that uses the modulus operator (%) but not the division operator (/), the other that uses the division operator but not the modulus operator.\par
+\par
+64. Write a program to find and  print the largest value in a group of values read from the keyboard.  The number of values is indeterminate.\par
+\par
+65, Write a program to compute the sum and product of the numbers form 1 to n.  The value n is indeterminate.\par
+\par
+66.  Write a number to compute n factorial, i.e., n!.  The value of n is indeterminate.  (Note: be careful in testing this program.  Relatively small values of  n produce very large values of n!)\par
+\par
+67.  Write a subfunction that reads an indeterminate number of values from a text file and prints the number of values, the average of the values and the "range" of the values.  The range is the highest value minus the lowest value.\par
+\par
+68.  A given text file has indeterminate size, each line having a student's last name and his grade (an integer).  Write a subfunction that prints the name of the student with the highest grade.\par
+\par
+69.  A given test file has indeterminate size, each line has a student's last name followed by four grades (integers).  Write a program to print each student's name and his average, i.e., the average of the four grades. \par
+\par
+70. Write a subfunction to search for a specified value in a two-dimensional array.  Assume that the array was defined to have 7 columns.  The calling function will pass an array pointer, counts of rows and columns used, and the specified value.\par
+\par
+71.  Write a subfunction to compute and print the sums of the columns of a two-dimensional array.  Write another subfunction to compute and print the sums of the rows of a two-dimensional array.  Assume that the array was defined to have 10 columns and that the calling function will pass an array pointer and counts of rows and columns used.\par
+\par
+72. Write a  void subfunction to compute a number (type float) raised to the nth power, where n is an integer.  Do not use any library functions.  Assume that the number and the value of n will be passed by the calling function.  The result of the computation should be made available to the calling function using call by reference. (You can compute a number raised to the nth power by multiplying it by itself n times.)  Show a test plan and driver.\par
+\par
+73.  Write a subfunction to return the index of the highest value in an array.   Assume that an array pointer to an array with values already stored, and a count of the values will be passed by the calling function.  Show a test plan and driver.\par
+\par
+74. Using a "while" loop, write a program that calculates and prints the sum of the even numbers from 1 to 100.  Write another program that does the same thing using a "for" loop.\par
+\par
+75. Write a program that computes the average of an indeterminate number of values read from the keyboard.  Use a  "while" loop and a sentinel value of -9999.\par
+\par
+76. Assume that a text file contains an indeterminate number of lines, each line has a student's last name followed by four integer grades.  Write a subfunction that reads the file and stores the data in an array of structures (show the  struct definition). The subfunction should return a count of the number of lines in the file.  Show a test plan and driver.  The driver should print the contents of the file in easy-to-read format.\par
+\par
+77.  Write a subfunction to print the highest value in each column of a two-dimensional array.  The output should show the column index and highest value for that column. Assume that the calling function will pass a pointer to an array (defined to have 8 columns) with values already stored.  The number of rows and columns of the array that are actually used will also be passed.\par
+\par
+78. 2. a) Show the definition for an array of struct suitable for storing information on a group of students of indeterminate size (no more than 50).  The information to be stored is the student's name, the student's weight in pounds and height in inches.  b)  Write a subfunction that is sent a pointer to a data structure of the type in part (a) that prints the names of all students that are over 72 inches or over 200 pounds.  Assume that the data is stored by the calling function and that a count of the number of student will be passed by the calling function.\par
+\par
+79.  Show the complete definition (specification and implementation) of a class for storing information about a student (name and four integer grades) and computing with the information.  The class should have member functions for storing student information returning the student's name, highest grade and average grade.  Your test plan and driver should use information for two students.\par
+\par
+80.  Write a subfunction that computes and returns the average of an indeterminate number of values read from the keyboard.  Use a while loop and sentinel value of -9999.  Show a test plan and driver. \par
+\par
+81.  Write a subfunction to find and return the largest value in a two-dimensional array of integers.  Assume that the array was declared to have 8 columns and that the values were stored by the calling function.  The calling function will pass the array pointer and the counts of the number of rows and columns used for the values.  Show a test plan and test driver.\par
+\par
+82.  Write a subfunction that computes the average of values in a one-dimensional array and a count of how many values are greater than the average of all the values.  The function should make the average and the count available to the calling function.  Assume that the calling function will pass an array pointer to an existing array of values and a count of the number of values in the array.  Show a test plan and test driver.\par
+\par
+83.  Show the specification for a linked-list class of integers that has "private" data and "public" functions to allow a client to:  a) enter a new value;  b) obtain a count of the number of occurrences of an integer specified by the client.  c) obtain the nth element in the list; d) obtain a count of the number of occurrences of an integer specified by the client.  Show the implementation of the function in (d).  Show all needed type definitions.\par
+\par
+84.  For the  class defined in problem 83,  assume that the function for part (d) is not included.  Write a client subfunction that does the same thing, i.e., obtains a count of the number of occurrences of an integer specified by the client. \par
+\par
+85.  Show the definition of  a dynamic linked-list class that has client operations for entering a new value in the "front", entering a new value at the "rear", deleting an element from the front, deleting an element from the rear, counting the number of elements in the list, and returning the nth element in the list.\par
+\par
+86. Using the class defined in problem 85,  write a stack class that stores the stack elements in a linked-list by means of \ul composition\ulnone , i.e., the only class data for the stack should be an object of  the list class.  \par
+\par
+87.  Using the class defined in problem 85,  write a queue class that stores the queue elements in a linked-list by means of \ul inheritance,\ulnone  i.e., your queue class should inherit the list class and should not have any data members of its own.\par
+\par
+88.  Show the complete definition of a stack class where the stack elements are stored in a dynamic linked-list with a tail pointer.  The only data members should be a list pointer and a tail pointer.  Show all type definitions needed.\par
+\par
+89.  A quadralateral is a geometric figure that has four sides.  Write a "quadralateral" class that has "protected" data for the four sides, a defult constructor, a function setting the values of the sides, and a function for computing the perimeter (the sum of the sides).  Write a class "square" that inherits the quadralateral class and has a memeber function for computing the area (length times width).  Write a client subfunction that is passed a value for the side of a square and prints the area and perimeter.\par
+\par
+90.  Write a stack class that uses a queue (by means of  composition) to store the stack elements.\par
+\par
+91. Write a stack class that uses a queue (by means of inheritance) to store the stack elements.\par
+\par
+92. Write a memeber function for a dynamic linked-list that prints the list in reverse order, i.e., the element in the node with the null pointer is printed first.\par
+\par
+93.  Write a  "private" recursive member function (using no loops) for a dynamic linked-list class that returns the largest value in the list.  Write a "public" member function that calls the recursivefunction and returns the largest value to the client.  \par
+\par
+94.  Write a subfunction that returns "1" if two strings are identical and "0" if they are not.  Assume that a calling function will pass pointers to two existing strings.\par
+\par
+\par
+\par
+95.  Write a subfunction that computes the sum of all the columns of a two-dimensional array of integers and returns the largest sum.  Assume the array was declared to have 8 columns and that the values were stored by the calling function.  The calling function will pass the array pointer and the counts of the number of rows and columns used for the values.\par
+\par
+96.  Write a subfunction to find the row and column positions of a specified value in a two-dimensional array (assume the value is present and unique).  The row and column positions should be made available to the calling function.  The subfunction will be passed a pointer to a two-dimensional array defined having 6 columns with the values already stored.  The specified value and a count of rows and columns used in the array will also be passed.  \par
+\par
+97.  Write a subfunction that returnsa count of how many values in a one-dimensional array are greater than average.  The subfunction will be passed a pointer to one-dimensional array with the values stored and a count of how many values (nothing else will be passed). \par
+\par
+98.  Write a member function for a singly-linked-list class that inserts a new value into the proper location in a sorted list.\par
+\par
+99  Write a member function for a linked-list class that creates a  sorted list from an unsorted list.  Utilize the member function written in problem 98.\par
+\par
+100. Write recursive member function (no loops)  for a linked-list class to perform the bubble sort.\par
+\par
+101. Write a memeber function for a doubly-linked-list class that inserts a new value into the proper location in a sorted list.\par
+\par
+102  Write a main function that reads an indeterminate number of values from the keyboard and prints them out in sorted order.  Use a list class including the function written in problem 101.\par
+\par
+103  Write a member function for a linked-list class that removes the largest element (value) in the list.  Assume there is only one instance of the largest value in the list.\par
+\par
+104.  Write a subfunction that reads a text file of integers (indeterminate length) and returns the average of the values.  \par
+\par
+105.  Write a 'void" subfunction that finds the largest and the smallest value in a group of three integers, and makes the largest and smallest values available to a calling function.  Assume that the three integers will be passed by the calling function.  \par
+\par
+106.  Write a subfunction that returns "1" if a specified character is present in a given string and "0" otherwise.  The calling function will pass the specified character and a pointer to the given string. \par
+\par
+107.  Write a subfunction that reads a text file of integers (indeterminate length) and returns the largest of the values.\par
+\par
+108..  Write a "void" subfunction that finds the average of three integers, and a count of how many of the integers  are negative and makes the average and the count available to a calling function.  Assume that the three integers will be passed by the calling function.  \par
+\par
+109.   Write a subfunction that returns a count of how many times a specified character occurs in a given string. The calling function will pass the specified character and a pointer to the given string. \par
+\par
+110.  Write a subfunction that finds the minimum and maximum values in a one-dimensional array of integers, and makes those two values available to a calling function.  Assume that the calling function will pass a pointer to the array and a count of the number of values in the array. \par
+\par
+111..   Write a subfunction that returns a count of how many times a specified character occurs in a given string. The calling function will pass the specified character and a pointer to the given string. \par
+\par
+112.. Write a subfunction that returns the sum of the values in a two-dimensional array.  Assume that the calling function will pass a pointer to an existing array and counts of how many rows and columns are used in the array.  Assume that the array was declared to have 8 columns. \par
+\par
+113.  Write a subfunction that finds the average value and a count of negative values in a one-dimensional array of integers, and makes the average and the count of negatives available to a calling function.  Assume that the calling function will pass a pointer to the array and a count of the number of values in the array. \par
+\par
+114.   Write a subfunction that returns a "1" if a specified character occurs in a given string and "0" otherwise.  The calling function will pass the specified character and a pointer to the given string. \par
+\par
+115. Write a subfunction that returns the largest value in a two-dimensional array.  Assume that the calling function will pass a pointer to an existing array and counts of how many rows and columns are used in the array.  Assume that the array was declared to have 6 columns. \par
+\par
+116.  Write a subfunction that reads a text file of integers (indeterminate length) and returns the largest of the values.\par
+\par
+117.  Write a "void" subfunction that finds the average of three integers, and a count of how many of the integers  are negative and makes the average and the count available to a calling function.  Assume that the three integers will be passed by the calling function.  \par
+\par
+118.   Write a subfunction that returns a count of how many times a specified character occurs in a given string. The calling function will pass the specified character and a pointer to the given string. \par
+\par
+119. Write a subfunction that returns the largest value in a two-dimensional array.  Assume that the calling function will pass a pointer to an existing array and counts of how many rows and columns are used in the array.  Assume that the array was declared to have 6 columns\par
+\par
+120. a) Show the specification (not the implementation) and all necessary definitions for a dynamic linked-list \b class\b0  for integer values. Data should be \b private\b0 . \b Public \b0 members should be: i)  a default constructor;  ii) a function for entering a new value;  iii) a function for printing all the values in the list;  iv) a function for returning a count of the values;  v) a function for returning the nth value in the list, where n is the index of the value;. vi)  a function that replaces the largest value in the list with the value zero. \par
+   b) Show the implementation of the function that replaces the largest value. (Assume the list has no duplicate values.)\par
+\par
+121. Show a client subfunction that returns a count of how many values in a list are greater than average.  The calling function will pass an object of the class specified in Question 120, with values already stored.\par
+\par
+122..  In a group of students of indeterminate size, each student has an ID number (int) and a GPA (float).  Show the definition for a type that is an array of structures suitable for storing data for all the students.  Write a subfunction that prints the ID numbers of all students with GPA's less than 2.0.  The calling function will pass an array pointer to an array of structures as you have defined it, with the student data already stored.\par
+\par
+123..  Write a main function that does the following:  a) reads an indeterminate number of values from the keyboard and stores them in a linked-list;  b) prints all the values;  c) prints the average of the values;  d) prints the negative values.\par
+\par
+124.   Show the complete definition of a \b class\b0  suitable for storing a student's ID number (int) and GPA (float). Class data should be \b private\b0 .  \b Public\b0  members should be:  a) a default constructor;  b) a function to assign the values of the data members;  c) a function that returns 1 if a student's GPA is at least 2.0 and returns 0 otherwise;  d) a function to print the student's ID number.\par
+\par
+125.. Write a client subfunction that prints a student's ID number if his GPA is less than 2.0.  The calling function will pass an object of the class shown in Question 124, with values already stored.\par
+\par
+\par
+126..  Write a main function that does the following:  a) reads an indeterminate number of values from the keyboard and stores them in a linked-list;  b) prints all the values;  c) prints the values greater than average.\par
+\par
+127.  Show the complete definition of a \b class \b0 suitable for storing a vector (an ordered group of integer values) of indeterminate size.  Class data should be \b private\b0 .  \b Public\b0  members should be:  a) a default constructor;  b) a function to enter a value into the vector;  c) a function to print all the values in the vector;  d) a function to return a count of how many values are in the vector;  e)  a function to return the nth value in the vector, where n is the index of the value.\par
+\par
+128.. Write a client subfunction that prints the values in the vector that are greater than average.  The calling function will pass an object of the class shown in Question 127, with values already strored.\par
+\par
+129.. a) Show the specification (not the implementation) and all necessary definitions for a dynamic linked-list \b class\b0  for integer values. Data should be \b private\b0 . \b Public \b0 members should be: i)  a default constructor;  ii) a function for entering a new value;  iii) a function for printing all the values in the list;  iv) a function for returning a count of the values;  v) a function for returning the nth value in the list, where n is the index of the value.  vi) a function that returns 1 if there are more positive values than negative values and 0 otherwise   b) Show the implementation of the function that returns 1 if there are more positive values than negative values. \par
+\par
+130.. Show a client subfunction that returns a count of how many values in a list are greater than average.  The calling function will pass an object of the class specified in Question 129, with values already stored.\par
+\par
+131.  In a group of students of indeterminate size, each student has an ID number (int) and a GPA (float).  Show the definition for a type that is an array of structures suitable for storing data for all the students.  Write a subfunction that prints the ID numbers of all students with GPA's less than 2.0.  The calling function will pass an array pointer to an array of structures as you have defined it, with the student data already stored.\par
+\par
+\b\par
+\b0 132. a) Show the specification (not the implementation) and all necessary definitions for a dynamic linked-list \b class\b0  for integer values. Data should be \b private\b0 . \b Public \b0 members should be: i)  a default constructor;  ii) a function for entering a new value;  iii) a function for printing all the values in the list;  iv) a function for returning a count of the values;  v) a function for returning the nth value in the list, where n is the index of the value.  vi) a function that returns the index of the highest value in the list. b) Show the implementation of the function that returns the index of the highest value\par
+\par
+133. Show  a client subfunction that returns the difference between the average and the highest value  in a list (largest minus average). The calling function will pass an object of the class specified in Question 132, with values already stored.\par
+\par
+134.  In a group of students of indeterminate size, each student has an ID number (int) and a GPA (float).  Show the definition for a type that is an array of structures suitable for storing data for all the students.  Write a subfunction that returns a count of how many students have GPA's less than 2.0.  The calling function will pass an array pointer to an array of structures as you have defined it, with the student data already stored.\par
+\par
+135.  Show the specification of a queue class.. Write a client subfunction that returns a count of how many values in the queue are greater than average.  The calling function will pass an object of your queue class (nothing else) with values already stored.  Show a test plan and test driver.\par
+\par
+136.  Show the complete definition of a stack class that utilizes a dynamic linked-list to store the stack values.\par
+\par
+137..  Show a recursive function to return the count of negative values in an array of indeterminate size.  Your function may not have more than two parameters.\par
+\par
+138 . Rewrite your function in problem 3 as a tail-recursive function. You may use as many parameters as you wish.\par
+\par
+139. Show a recursive function to return the count of negative values in a linked-list of indeterminate length.  Your function may have only one parameter (for the list pointer).  Show all needed type definitions. \par
+\par
+140. A vector class should have member functions for:  initializing the vector to an empty state, returning a count of how many values in the vector; and returning the value corresponding to a specified index.  Show the complete definition of a vector class that has no data members  but inherits from the mylist class (attached) using a "private" method of inheritance.\par
+\par
+141. A queue class should have member functions for: initializing the queue to an empty state, entering a value into the queue, getting a value out of the queue in proper order, testing for the empty state, and testing for the full state.   Show the complete definition of a queue class that has an object of the mylist class as its only data member. \par
+\par
+142. A stack class should have member functions for: initializing the stack to an empty state, entering a value into the stack, getting a value out of the stack in proper order, testing for the empty state, and testing for the full state.  Show the complete definition of a stack class that has no data members but uses inheritance form the mylist class.\par
+\par
+143. A polygon class should have member functions for: initializing the polygon to having a zero number of sides, storing the length of a side (the function will be called once for each side of the polygon), and returning the perimeter of the polygon.  Show the complete definition of a polygon class that has an object of the vector class (shown in problem 140) as its only data. \par
+\par
+144. A vector class should have member functions for:  initializing the vector to an empty state, returning a count of how many values in the vector; and returning the value corresponding to a specified index.  Show the complete definition of a vector class that has an object of the mylist class (attached) as "private" data (no other data).\par
+\par
+145. A queue class should have member functions for: initializing the queue to an empty state, entering a value into the queue, getting a value out of the queue in proper order, testing for the empty state, and testing for the full state.   Show the complete definition of a queue class that has no data members but uses inheritance from the mylist class.  \par
+\par
+146. A stack class should have member functions for: initializing the stack to an empty state, entering a value into the stack, getting a value out of the stack in proper order, testing for the empty state, and testing for the full state.  Show the complete definition of a stack class that has an object of the mylist class as the only data.\par
+\par
+147. A polygon class should have member functions for: initializing the polygon to having a zero number of sides, storing the length of a side (the function will be called once for each side of the polygon), and returning the perimeter of the polygon.  Show the complete definition of a polygon class that has no data members but uses inheritance from the vector class shown in problem 144. \par
+\par
+148.  The product of the counting numbers (integers) from 1 to n may be defined as:\par
+                                                                                         \par
+                                                                                                  \{   1                           if  n = 1\par
+               Prod(n) = 1 * 2 *  3 * . . .* n        or        Prod(n) =   \{ \par
+                                                                                                  \{    n * Prod(n-1)       if n > 1\par
+\par
+a) Write a subfunction that uses a loop to return the value of  Prod(n).  The calling function will pass the value of n.\par
+\par
+b) Write the same subfunction as in part (a) without using a loop; use recursion.\par
+\par
+149. Show the complete definition of a queue class that uses an array to store the values. Show a test plan and driver.\par
+\par
+150. Show the complete definition of a stack class that uses a linked-list to store the values. Show a test plan and driver.                \par
+\par
+151.. Write a client subfunction that returns the largest value in a queue.  The calling function will pass an object (with values already stored) of the queue class shown in problem 149.\par
+\par
+152.  The sum of the counting numbers (integers) from 1 to n may be defined as:\par
+                                                                                         \par
+                                                                                                  \{   1                           if  n = 1\par
+               Sum(n) = 1 + 2 + 3 + . . .+ n        or        Sum(n) =   \{ \par
+                                                                                                  \{    n + Sum(n-1)       if n > 1\par
+\par
+a) Write a subfunction that uses a loop to return the value of Sum(n).  The calling function will pass the value of n.\par
+\par
+b) Write the same subfunction as in part (a) without using a loop; use recursion.\par
+\par
+153. Show the complete definition of a stack class that uses an array to store the values. Show a test plan and driver.\par
+\par
+154. Show the complete definition of a queue class that uses a linked-list to store the values. Show a test plan and driver.                \par
+\par
+155. Write a client subfunction that returns the largest value in a stack.  The calling function will pass an object (with values already stored) of the stack class shown in problem 153.\par
+\par
+\par
+}
+ 

@@ -1,0 +1,19 @@
+Test Case 1
+90
+80
+70
+Last Element: 70
+
+Test Case 2
+50
+10
+100
+Last Element: 100
+
+Test Case 3
+65
+70
+80
+90
+Last Element: 90
+Press any key to continue

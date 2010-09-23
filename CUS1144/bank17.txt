@@ -1,0 +1,96 @@
+#include <fstream.h>
+
+class matrix
+{
+private:
+	int a[10][10];
+	int rows, cols;
+public:
+	matrix();
+	void entershape(int, int);  // set the number of rows and columns
+	void enter(int, int, int);  // enter value into the array at given row and column position 
+	int countrows();  // return the row count
+	int countcols();  // return the column count
+	int getval(int, int);  // return a value at given row and column position
+	void printvals();  // print the array
+	matrix addmats(matrix, matrix);   // add two matrices term by term
+};
+
+matrix::matrix()
+{
+	rows = cols = 0;
+}
+
+void matrix::entershape(int r, int c)
+{
+	rows = r;
+	cols = c;
+}
+
+void matrix::enter(int x, int r, int c)
+{
+	a[r][c] = x;
+}
+
+int matrix::countrows()
+{
+	return rows;
+}
+
+int matrix::countcols()
+{
+	return cols;
+}
+
+int matrix::getval(int r, int c)
+{
+	return a[r][c];
+}
+
+void matrix::printvals()
+{
+	int i,j; 
+	cout << endl;
+	for (i = 0; i < rows; i++)
+	{
+		for(j = 0;  j < cols; j++)
+		   cout << a[i][j] << " ";
+		cout << endl;
+	}
+}
+
+
+// The function addmats has been left for you to do
+     
+
+
+void main()
+{
+	matrix x1, x2, x3;
+	int r,c,i,j,v;
+ 
+	cout << "how many rows and columns?\n";
+	cin >> r >> c;
+	x1.entershape(r,c);
+
+    cout << "enter values for first matrix in row major order\n";
+	for(i = 0; i < r; i++)
+		for(j = 0; j < c; j++)
+		{
+			cout << "enter value\n";
+			cin >> v;
+			x1.enter(v,i,j);
+		}
+
+    cout << "enter values for second matrix in row major order\n";
+	for(i = 0; i < r; i++)
+		for(j = 0; j < c; j++)
+		{
+			cout << "enter value\n";
+			cin >> v;
+			x2.enter(v,i,j);
+		}
+    x3 = x3.addmats(x1,x2);
+
+	x3.printvals();
+}

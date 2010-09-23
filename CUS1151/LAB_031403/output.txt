@@ -1,0 +1,5 @@
+Average: 75
+Greater Than Average:
+80
+90
+Press any key to continue

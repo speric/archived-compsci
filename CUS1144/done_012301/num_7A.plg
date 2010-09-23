@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: num_7A - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP7342.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/num_7A.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Speric\school\cus1144\labs\_lab_01_012301\num_7A.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP7342.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP7343.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/num_7A.pdb" /debug /machine:I386 /out:"Debug/num_7A.exe" /pdbtype:sept 
+.\Debug\num_7A.obj
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP7343.TMP"
+<h3>Output Window</h3>
+Compiling...
+num_7A.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+num_7A.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

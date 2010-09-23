@@ -1,0 +1,17 @@
+Test Case 1
+70
+90
+80
+65
+
+Test Case 2
+100
+10
+50
+
+Test Case 3
+90
+80
+70
+65
+Press any key to continue

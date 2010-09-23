@@ -1,0 +1,34 @@
+Enter shape for matrices:
+Rows: 3
+Columns: 3
+Enter values for first matrix in row-major order:
+Enter Value [0][0]: 3
+Enter Value [0][1]: 4
+Enter Value [0][2]: 5
+Enter Value [1][0]: 1
+Enter Value [1][1]: 2
+Enter Value [1][2]: 3
+Enter Value [2][0]: 4
+Enter Value [2][1]: 5
+Enter Value [2][2]: 6
+Enter values for second matrix in row-major order:
+Enter Value [0][0]: 1
+Enter Value [0][1]: 2
+Enter Value [0][2]: 3
+Enter Value [1][0]: 4
+Enter Value [1][1]: 5
+Enter Value [1][2]: 6
+Enter Value [2][0]: 7
+Enter Value [2][1]: 8
+Enter Value [2][2]: 9
+New Merged Matrix:
+4 6 8
+5 7 9
+11 13 15
+Row 0 = 18
+Row 1 = 21
+Row 2 = 39
+Column 0 = 18
+Column 1 = 21
+Column 2 = 39
+Press any key to continue

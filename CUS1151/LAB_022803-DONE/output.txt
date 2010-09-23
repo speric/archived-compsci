@@ -1,0 +1,13 @@
+Test Case 1
+Number of elements: 3
+1st element: 70
+
+Test Case 2
+Number of elements: 3
+2nd element: 50
+
+Test Case 2
+Number of elements: 3
+3rd element: 80
+
+Press any key to continue
